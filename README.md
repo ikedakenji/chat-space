@@ -39,7 +39,7 @@ Things you may want to cover:
   ### massagesテーブル
   |column|type|option|
   |------|----|------|
-  |body|text|primary_key: ture|
+  |body|text||
   |image|string||
   |user_id|integer|null: false, foreign_key: ture|
   |group_id|integer|null: false, foreign_key: ture|
