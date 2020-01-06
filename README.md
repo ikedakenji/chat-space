@@ -45,9 +45,3 @@ Things you may want to cover:
 |image|string|null: false, foreign_key: ture|
 |user_id|integer|null: false, foreign_key: ture|
 |group_id|integer|null: false, foreign_key: ture|
-
-
-
-
-
-
