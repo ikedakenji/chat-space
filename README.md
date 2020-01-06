@@ -17,7 +17,7 @@ Things you may want to cover:
   - has_many :massages
   - has_many :groups_users
   - has_many :groups, though: :groups_users
-  
+
   ### groups_usersテーブル
   |column|type|option|
   |------|----|------|
@@ -40,7 +40,7 @@ Things you may want to cover:
   |column|type|option|
   |------|----|------|
   |body|text|null: false, foreign_key: ture|
-  |image|string|null: false|
+  |image|string||
   |user_id|integer|null: false, foreign_key: ture|
   |group_id|integer|null: false, foreign_key: ture|
   ### association
