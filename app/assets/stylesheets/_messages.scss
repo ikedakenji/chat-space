@@ -86,7 +86,8 @@
 
 
 .main_header {
-  width: 100vw;
+  width: calc(100vw - 300px);
+  float: right;
   .main_info {
     box-sizing: border-box;
     height: 100px;
@@ -163,7 +164,7 @@
         border: none;
         float: left;
         height: 50px;
-        width: calc(100% - 430px);
+        width: calc(100% - 150px);
       }
       &__mask {
         background-color: #ffffff;
