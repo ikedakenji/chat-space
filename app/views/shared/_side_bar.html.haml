@@ -1,6 +1,6 @@
 .side_bar
   .side_user
-    %h3.user__name
+    %h3.side_box.user__name
       = current_user.name
     %ul.user__lists
       -# = link_to new_group_path do
@@ -16,11 +16,12 @@
   .side_group
     - current_user.groups.each do |group|
       .group
-        = link_to 'groups' do
+        -# = link_to 'groups' do
+        = link_to group_messages_path(group) do
           .group__name
             = group.name
           .group__message
-            メッセージはまだありません。
+            = group.show_last_message
     -# .group
     -#   .group__name
     -#     グループ名
@@ -37,4 +38,5 @@
     -#   .group__message
     -#     新着メッセージ
 
+  
   
