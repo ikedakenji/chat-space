@@ -1,7 +1,7 @@
-// .wrapper {
-//   display: flex;
-//   justify-content: space-between;
-// }
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 
 .main_header {
 width: calc(100vw - 300px);
@@ -51,7 +51,6 @@ padding-right: 10px;
 }
 
 .main_message.list {
-  // margin-bottom: 46px;
   margin-left: 40px;
   display: inline;
 }
@@ -73,10 +72,7 @@ margin-left: 35px;
 .lower-message {
 padding-top: 7px;
 margin-left: 40px;
-// margin-bottom: 10px;
-// display: flex;
   &__contents {
-  // color: #e8effa;
   font-size: 20px;
   }
 }
@@ -99,10 +95,6 @@ margin-left: 40px;
   padding: 20px 40px;
 }
 
-
-
-
-
 .form {
 background-color: #d2d2d2d2;
 box-sizing: border-box;
@@ -121,8 +113,6 @@ height: 50px;
   }
   &__mask__image {
   position: absolute;
-  // top: 10px;
-  // margin-top: 7px;
   top: 10px;
   margin-left: 40px;
   right: 150px;
@@ -130,7 +120,6 @@ height: 50px;
   
   } 
   &__submit {
-  // position: absolute;
   height: 50px;
   width: 100px;
   background-color: #38aef0;
