@@ -2,41 +2,20 @@
   .side_user
     %h3.side_box.user__name
       = current_user.name
-    %ul.user__lists
-      -# = link_to new_group_path do
-      -#   %i.fa.fa-pencil-square-o.header-items__icons--pen
-      -# = link_to edit_user_path(current_user.id) do
-      -#   %i.fa.fa-cog.header-items__icons--cog
+    %ul.icon__lists
       %li.list
         = link_to new_group_path  do
           = icon('fa', 'edit',class: 'icon')
+    %ul.icon__lists
       %li.list
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: 'icon')
   .side_group
     - current_user.groups.each do |group|
       .group
-        -# = link_to 'groups' do
         = link_to group_messages_path(group) do
           .group__name
             = group.name
           .group__message
             = group.show_last_message
-    -# .group
-    -#   .group__name
-    -#     グループ名
-    -#   .group__message
-    -#     新着メッセージ
-    -# .group
-    -#   .group__name
-    -#     グループ名
-    -#   .group__message
-    -#     新着メッセージ
-    -# .group
-    -#   .group__name
-    -#     グループ名
-    -#   .group__message
-    -#     新着メッセージ
-
-  
-  
+    
