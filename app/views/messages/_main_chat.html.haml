@@ -1,7 +1,5 @@
 .main_header
   .main_info
-    .right-header
-      = link_to "Edit", edit_group_path(@group.id),class:"edit-button"
     .left-header
       .left-header__title
         = @group.name
@@ -9,6 +7,8 @@
         - @group.users.each do |user|
           .member
           = user.name
+    .right-header
+      = link_to "Edit", edit_group_path(@group.id),class:"edit-button"
 
   .messages
     = render @messages
